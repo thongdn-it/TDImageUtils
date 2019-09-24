@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'TDImageUtils_Example' do
+  pod 'TDImageUtils', :path => '../'
+
+  target 'TDImageUtils_Tests' do
+    inherit! :search_paths
+    
+  end
+end

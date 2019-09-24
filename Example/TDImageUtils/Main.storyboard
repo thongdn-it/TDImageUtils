@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TDImageUtils_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-2U-uIh">
+                                <rect key="frame" x="46" y="30" width="283" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NyG-2U-uIh" secondAttribute="height" multiplier="16:9" id="U2i-Nx-dyJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhm-yj-uHR">
+                                <rect key="frame" x="164.5" y="199" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b3x-Lo-hSb">
+                                <rect key="frame" x="46" y="240" width="283" height="159.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resize" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRe-L7-77o">
+                                <rect key="frame" x="162.5" y="409.5" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRw-Qh-TwB">
+                                <rect key="frame" x="148.5" y="619.5" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yNs-cF-ISj">
+                                <rect key="frame" x="46" y="450.5" width="283" height="159"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b3x-Lo-hSb" firstAttribute="width" secondItem="NyG-2U-uIh" secondAttribute="width" id="0Ou-T4-Ows"/>
+                            <constraint firstItem="yNs-cF-ISj" firstAttribute="height" secondItem="NyG-2U-uIh" secondAttribute="height" id="3me-mV-Vd3"/>
+                            <constraint firstItem="NyG-2U-uIh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="7Td-nr-aNL"/>
+                            <constraint firstItem="Yhm-yj-uHR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8MM-db-HeT"/>
+                            <constraint firstItem="yNs-cF-ISj" firstAttribute="width" secondItem="NyG-2U-uIh" secondAttribute="width" id="A8e-qw-wBf"/>
+                            <constraint firstItem="Yhm-yj-uHR" firstAttribute="top" secondItem="NyG-2U-uIh" secondAttribute="bottom" constant="10" id="BBM-3o-rMB"/>
+                            <constraint firstItem="yNs-cF-ISj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="K8t-wE-jvS"/>
+                            <constraint firstItem="wRe-L7-77o" firstAttribute="top" secondItem="b3x-Lo-hSb" secondAttribute="bottom" constant="10" id="OZC-Lf-N8h"/>
+                            <constraint firstItem="kRw-Qh-TwB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="SDp-AP-6MR"/>
+                            <constraint firstItem="b3x-Lo-hSb" firstAttribute="top" secondItem="Yhm-yj-uHR" secondAttribute="bottom" constant="20" id="ZW9-EZ-hKt"/>
+                            <constraint firstItem="kRw-Qh-TwB" firstAttribute="top" secondItem="yNs-cF-ISj" secondAttribute="bottom" constant="10" id="Zl1-Yp-3eR"/>
+                            <constraint firstItem="NyG-2U-uIh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="30" id="cHk-3z-G0V"/>
+                            <constraint firstItem="wRe-L7-77o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fux-Jn-YXI"/>
+                            <constraint firstItem="b3x-Lo-hSb" firstAttribute="height" secondItem="NyG-2U-uIh" secondAttribute="height" id="mgl-j0-Dim"/>
+                            <constraint firstItem="b3x-Lo-hSb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="qs4-Wq-agB"/>
+                            <constraint firstItem="NyG-2U-uIh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="uFz-3K-bO8"/>
+                            <constraint firstItem="yNs-cF-ISj" firstAttribute="top" secondItem="wRe-L7-77o" secondAttribute="bottom" constant="20" id="wp8-w8-FuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgCompress" destination="yNs-cF-ISj" id="OGf-9d-hkJ"/>
+                        <outlet property="imgOrigin" destination="NyG-2U-uIh" id="0Qc-V3-23s"/>
+                        <outlet property="imgResize" destination="b3x-Lo-hSb" id="iO8-S8-zUx"/>
+                        <outlet property="lbCompress" destination="kRw-Qh-TwB" id="w8K-Re-GmW"/>
+                        <outlet property="lbOrigin" destination="Yhm-yj-uHR" id="wJP-Jx-mYb"/>
+                        <outlet property="lbResize" destination="wRe-L7-77o" id="n3U-d4-E3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

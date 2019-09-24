@@ -1,0 +1,6 @@
+framework module TDImageUtils {
+  umbrella header "TDImageUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

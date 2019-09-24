@@ -1,0 +1,16 @@
+PODS:
+  - TDImageUtils (1.0.0)
+
+DEPENDENCIES:
+  - TDImageUtils (from `../`)
+
+EXTERNAL SOURCES:
+  TDImageUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TDImageUtils: 21048ed7536a951e4df9a266f5957a98feb6fab8
+
+PODFILE CHECKSUM: 41b6f47dfdbe3d81c22b689d9a2c657dff30df76
+
+COCOAPODS: 1.8.0
